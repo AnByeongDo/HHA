@@ -10,17 +10,14 @@
         android:id="@+id/button"
         android:layout_width="422dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="4dp"
         android:background="#000000"
         android:text="HA"
         android:textSize="40dp"
         app:backgroundTint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="@+id/Menu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/AI"
@@ -81,7 +78,9 @@
         app:icon="@android:drawable/ic_menu_search"
         app:iconGravity="textTop"
         app:iconSize="40dp"
-        tools:layout_editor_absoluteX="301dp"
+        app:layout_constraintEnd_toStartOf="@+id/Basket"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toEndOf="@+id/Menu"
         tools:layout_editor_absoluteY="3dp" />
 
     <Button
@@ -92,23 +91,24 @@
         app:icon="@android:drawable/ic_menu_today"
         app:iconGravity="textTop"
         app:iconSize="40dp"
-        tools:layout_editor_absoluteX="362dp"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toEndOf="@+id/Menu"
         tools:layout_editor_absoluteY="3dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="413dp"
-        android:layout_height="435dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="187dp"
-        app:layout_constraintBottom_toTopOf="@+id/AI"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="7dp"
+        android:text="AI 분석"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        app:layout_constraintVertical_bias="0.88"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
