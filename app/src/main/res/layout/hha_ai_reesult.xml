@@ -34,20 +34,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/AI"
+        android:id="@+id/btn_ai"
         android:layout_width="116dp"
         android:layout_height="54dp"
         android:text="AI"
         app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/MY"
+        app:layout_constraintEnd_toEndOf="@+id/btn_my"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994" />
 
     <Button
-        android:id="@+id/MY"
+        android:id="@+id/btn_my"
         android:layout_width="116dp"
         android:layout_height="54dp"
         android:text="MY"
@@ -66,12 +66,12 @@
         android:layout_marginTop="10dp" />
 
     <ImageButton
-        android:id="@+id/MenuButton"
+        android:id="@+id/btn_menu"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/btn_basket"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button"
@@ -79,20 +79,20 @@
         app:srcCompat="@drawable/baseline_menu_24" />
 
     <ImageButton
-        android:id="@+id/SearchButton"
+        android:id="@+id/btn_search"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_basket"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/MenuButton"
+        app:layout_constraintStart_toEndOf="@+id/btn_menu"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_search_24" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btn_basket"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
@@ -105,14 +105,14 @@
         app:srcCompat="@drawable/baseline_shopping_basket_24" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btn_home"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/MY"
+        app:layout_constraintEnd_toStartOf="@+id/btn_my"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/AI"
+        app:layout_constraintStart_toEndOf="@+id/btn_ai"
         app:layout_constraintTop_toTopOf="@+id/button"
         app:layout_constraintVertical_bias="0.994"
         app:srcCompat="@drawable/baseline_home_24" />
@@ -129,18 +129,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="방 분류"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
 
     <RadioButton
         android:id="@+id/radioButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="방 분위기 파악"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.19" />
 
     <RadioGroup
+        android:id="@+id/radioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/radioButton2"
@@ -152,8 +159,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="결과"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="170dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        app:layout_constraintVertical_bias="0.04000002" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,9 +11,10 @@
         android:id="@+id/imageView11"
         android:layout_width="416dp"
         android:layout_height="181dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_content"
+        app:layout_constraintTop_toTopOf="@+id/button"
         app:srcCompat="@drawable/gagu"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="52dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/button"
@@ -27,20 +28,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/AI"
+        android:id="@+id/btn_ai"
         android:layout_width="116dp"
         android:layout_height="54dp"
         android:text="AI"
         app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/MY"
+        app:layout_constraintEnd_toEndOf="@+id/btn_my"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994" />
 
     <Button
-        android:id="@+id/MY"
+        android:id="@+id/btn_my"
         android:layout_width="116dp"
         android:layout_height="54dp"
         android:text="MY"
@@ -59,12 +60,12 @@
         android:layout_marginTop="10dp" />
 
     <ImageButton
-        android:id="@+id/MenuButton"
+        android:id="@+id/btn_menu"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/btn_basket"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button"
@@ -72,20 +73,20 @@
         app:srcCompat="@drawable/baseline_menu_24" />
 
     <ImageButton
-        android:id="@+id/SearchButton"
+        android:id="@+id/btn_search"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_basket"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/MenuButton"
+        app:layout_constraintStart_toEndOf="@+id/btn_menu"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_search_24" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btn_basket"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
@@ -98,52 +99,68 @@
         app:srcCompat="@drawable/baseline_shopping_basket_24" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btn_home"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/MY"
+        app:layout_constraintEnd_toStartOf="@+id/btn_my"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/AI"
+        app:layout_constraintStart_toEndOf="@+id/btn_ai"
         app:layout_constraintTop_toTopOf="@+id/button"
         app:layout_constraintVertical_bias="0.994"
         app:srcCompat="@drawable/baseline_home_24" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tv_content"
         android:layout_width="358dp"
         android:layout_height="144dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
         android:text="인공지능을 활용하여 사진을 올리고 사진을 분석하여 집안 분위기와 용도를 분석하여 그에 맞는 가구를 추천해주는 시스템 입니다."
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="303dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/tv_maintitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HomeHarmonyAi"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="254dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="377dp"
         android:layout_height="127dp"
         android:visibility="visible"
-        app:srcCompat="@drawable/rectangle_8"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="463dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rectangle_8" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="광고 배너"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="517dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

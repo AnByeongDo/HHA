@@ -42,7 +42,7 @@
         android:layout_marginBottom="323dp"
         android:text="가구이름"
         android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/AI"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ai"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,20 +117,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/AI"
+        android:id="@+id/btn_ai"
         android:layout_width="116dp"
         android:layout_height="54dp"
         android:text="AI"
         app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/MY"
+        app:layout_constraintEnd_toEndOf="@+id/btn_my"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994" />
 
     <Button
-        android:id="@+id/MY"
+        android:id="@+id/btn_my"
         android:layout_width="116dp"
         android:layout_height="54dp"
         android:text="MY"
@@ -150,12 +150,12 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
-        android:id="@+id/MenuButton"
+        android:id="@+id/btn_menu"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/btn_basket"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button"
@@ -163,20 +163,20 @@
         app:srcCompat="@drawable/baseline_menu_24" />
 
     <ImageButton
-        android:id="@+id/SearchButton"
+        android:id="@+id/btn_search"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_basket"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/MenuButton"
+        app:layout_constraintStart_toEndOf="@+id/btn_menu"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_search_24" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btn_basket"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#00FFFFFF"
@@ -189,14 +189,14 @@
         app:srcCompat="@drawable/baseline_shopping_basket_24" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btn_home"
         android:layout_width="59dp"
         android:layout_height="59dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/MY"
+        app:layout_constraintEnd_toStartOf="@+id/btn_my"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toEndOf="@+id/AI"
+        app:layout_constraintStart_toEndOf="@+id/btn_ai"
         app:layout_constraintTop_toTopOf="@+id/button"
         app:layout_constraintVertical_bias="0.994"
         app:srcCompat="@drawable/baseline_home_24" />
