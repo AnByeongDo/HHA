@@ -74,7 +74,10 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_menu"
@@ -133,13 +136,14 @@
         android:layout_width="390dp"
         android:layout_height="351dp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.13999999"
-        app:srcCompat="@drawable/rectangle_8"
-        tools:layout_editor_absoluteX="11dp" />
+        app:srcCompat="@drawable/rectangle_8" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnChooseImage2"
+        android:id="@+id/btn_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="이미지 가져오기"

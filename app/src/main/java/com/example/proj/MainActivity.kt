@@ -1,8 +1,10 @@
 package com.example.proj
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageButton
 
@@ -31,6 +33,10 @@ class MainActivity : AppCompatActivity() {
 
     fun ai() {
         setContentView(R.layout.hha_ai_main)
+
+        val intent = Intent(this, SubActivity::class.java)
+        startActivity(intent)
+
         val btn_home = findViewById<ImageButton>(R.id.btn_home)
         val btn_my: Button = findViewById(R.id.btn_my)
         val btn_search = findViewById<ImageButton>(R.id.btn_search)
@@ -125,4 +131,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         start()
     }
+
 }
