@@ -24,6 +24,33 @@
             android:name=".SubActivity"
             android:exported="false" />
         <activity
+            android:name=".AiMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AiRecommandActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AiResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BasketMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClientFirstActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClinetMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -50,7 +50,6 @@ class SubActivity : AppCompatActivity() {
 
         }
         finish()
-
     }
 
 }
