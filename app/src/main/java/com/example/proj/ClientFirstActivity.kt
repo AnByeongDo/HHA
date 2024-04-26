@@ -12,7 +12,6 @@ class ClientFirstActivity : AppCompatActivity() {
     lateinit var my_login_btn: Button
     lateinit var btn_home: ImageButton
     lateinit var btn_my: Button
-    lateinit var btn_menu: ImageButton
     lateinit var btn_search: ImageButton
     lateinit var btn_ai: Button
 
@@ -24,7 +23,6 @@ class ClientFirstActivity : AppCompatActivity() {
         //my_login_btn = findViewById(R.id.my_login_btn)
         btn_home = findViewById(R.id.btn_home)
         btn_my = findViewById(R.id.btn_my)
-        btn_menu = findViewById(R.id.btn_menu)
         btn_ai = findViewById(R.id.btn_ai)
         btn_search = findViewById(R.id.btn_search)
 

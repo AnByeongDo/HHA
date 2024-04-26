@@ -39,7 +39,7 @@ class AiMainActivity : AppCompatActivity()  {
         }
 
         btn_my.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(Intent(this, ClientFirstActivity::class.java))
         }
 
         btn_search.setOnClickListener {
